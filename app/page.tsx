@@ -16,6 +16,7 @@ import {
 } from 'ionicons/icons'
 
 import { PanelLeft } from 'akar-icons'
+import { SidebarMenu } from './components/SidebarMenu'
 
 export default function Home() {
   return (
@@ -26,18 +27,8 @@ export default function Home() {
       <div className="absolute left-[394.38px] top-[926.46px] h-[10px] w-[975.87px] bg-[url('/images/shadow.png')] bg-cover bg-no-repeat" />
 
       {/* Main Container */}
-      <main className="border-1 absolute flex h-[660px]   w-[1048px]  gap-6 ">
-        {/* SideMenu */}
-        <div className="flex items-center bg-slate-300">
-          {/* Sidebar Actions */}
-          <div className="flex flex-col justify-between gap-4 bg-red-400 p-2">
-            <div>Play</div>
-            <div>Homem</div>
-            <div>Quadrado</div>
-            <div>Lupa</div>
-          </div>
-          {/* ------- */}
-        </div>
+      <main className="absolute flex h-[660px] w-[1048px]   gap-6  border-2 ">
+        <SidebarMenu />
         {/* Column */}
         <div className="flex flex-1 flex-col items-center gap-6">
           {/* NavBar */}
