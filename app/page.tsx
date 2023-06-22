@@ -1,22 +1,9 @@
 'use client'
 import { IonIcon } from '@ionic/react'
-import {
-  playCircleOutline,
-  accessibilityOutline,
-  albumsOutline,
-  searchOutline,
-  chevronBack,
-  chevronForward,
-  text,
-  lockClosed,
-  refresh,
-  shareOutline,
-  addOutline,
-  copyOutline,
-} from 'ionicons/icons'
+import {} from 'ionicons/icons'
 
-import { PanelLeft } from 'akar-icons'
 import { SidebarMenu } from './components/SidebarMenu'
+import NavBar from './components/NavBar'
 
 export default function Home() {
   return (
@@ -32,29 +19,7 @@ export default function Home() {
         {/* Column */}
         <div className="flex flex-1 flex-col items-center gap-6">
           {/* NavBar */}
-          <div className=" flex h-16 w-1/2  bg-slate-500 text-white">
-            {/* Actions */}
-            <div>
-              <div>Sidebar</div>
-              <div> Left</div>
-              <div>Right</div>
-            </div>
-            {/* ---- */}
-            {/* Adress */}
-            <div>
-              <div>Tipogria</div>
-              <div> Cadeado +Adress</div>
-              <div>Refresh</div>
-            </div>
-            {/* ------- */}
-            {/* Actions II */}
-            <div>
-              <div>Enviar</div>
-              <div>+</div>
-              <div>Copiar</div>
-            </div>
-            {/* --------- */}
-          </div>
+          <NavBar />
           {/* Screen */}
           <div className=" bg-teal-400"> Player</div>
           {/* Interaction */}
