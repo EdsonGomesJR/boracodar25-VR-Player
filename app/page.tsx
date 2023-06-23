@@ -3,6 +3,7 @@
 import { SidebarMenu } from './components/SidebarMenu'
 import NavBar from './components/NavBar'
 import { Player } from './components/Player'
+import YouTubePlayer from './components/Test'
 
 export default function Home() {
   return (
@@ -21,8 +22,9 @@ export default function Home() {
           <NavBar />
           {/* Screen */}
           <Player />
+          {/* <YouTubePlayer videoId="ZaYvwn9nBD4" /> */}
           {/* Effect  it' was to blur the video image and perhaps create an light effect while video is playing, but a just add a black opacity 10% blur to make it more darker */}
-          <div className="absolute -bottom-[4px] -left-[50px] h-[596px] w-[1060px] rounded-[32px] bg-black/10  blur-[50px]" />
+          {/* <div className="absolute -bottom-[4px] -left-[50px] h-[596px] w-[1060px] rounded-[32px] bg-black/10  blur-[50px]" /> */}
           {/* Interaction */}
           <div className="flex items-center justify-center gap-4">
             <div className="h-2 w-2 rounded-lg bg-white/60 backdrop-blur-[2px]" />
