@@ -1,5 +1,6 @@
 'use client'
 
+import { SidebarMenu } from './components/SidebarMenu'
 import NavBar from './components/NavBar'
 import { Player } from './components/Player'
 
@@ -13,6 +14,7 @@ export default function Home() {
 
       {/* Main Container */}
       <main className="absolute flex h-[660px] w-[1048px]   gap-6 ">
+        <SidebarMenu />
         {/* Column */}
         <div className="flex flex-1 flex-col items-center gap-6">
           {/* NavBar */}

@@ -1,10 +1,9 @@
-import { IonIcon } from '@ionic/react'
 import {
-  playCircleOutline,
-  accessibilityOutline,
-  albumsOutline,
-  searchOutline,
-} from 'ionicons/icons'
+  IoPlayCircleOutline,
+  IoAccessibilityOutline,
+  IoAlbumsOutline,
+  IoSearchOutline,
+} from 'react-icons/io5'
 
 export function SidebarMenu() {
   return (
@@ -15,22 +14,18 @@ export function SidebarMenu() {
       
       backdrop-blur-[16px]"
       >
-        <IonIcon
-          className=" rounded-full p-2 text-[24px]  hover:bg-white/20"
-          icon={playCircleOutline}
-        />
-        <IonIcon
-          icon={accessibilityOutline}
-          className=" rounded-[80px] p-2 text-[24px] hover:bg-white/20"
-        />
-        <IonIcon
-          icon={albumsOutline}
-          className=" rounded-[80px] p-2 text-[24px]  hover:bg-white/20"
-        />
-        <IonIcon
-          icon={searchOutline}
-          className=" rounded-full p-2 text-[24px]  hover:bg-white/20"
-        />
+        <div className="flex h-[40px] w-[40px] items-center justify-center rounded-[80px]   hover:bg-white/20">
+          <IoPlayCircleOutline size={28} />
+        </div>
+        <div className="flex h-[40px] w-[40px] items-center justify-center rounded-[80px]   hover:bg-white/20">
+          <IoAccessibilityOutline size={28} />
+        </div>
+        <div className="flex h-[40px] w-[40px] items-center justify-center rounded-[80px]   hover:bg-white/20">
+          <IoAlbumsOutline size={28} />
+        </div>
+        <div className="flex h-[40px] w-[40px] items-center justify-center rounded-[80px]   hover:bg-white/20">
+          <IoSearchOutline size={28} />
+        </div>
       </div>
     </div>
   )
