@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { ActionButtonsLeft } from './ActionButtonsLeft'
 import { AdressWidget } from './AdressWidget'

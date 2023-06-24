@@ -1,3 +1,4 @@
+'use client'
 import { IonIcon } from '@ionic/react'
 import { PanelLeft } from 'akar-icons'
 import { chevronBack, chevronForward } from 'ionicons/icons'

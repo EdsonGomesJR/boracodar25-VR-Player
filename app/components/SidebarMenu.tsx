@@ -32,7 +32,6 @@ export function SidebarMenu() {
           className=" rounded-full p-2 text-[24px]  hover:bg-white/20"
         />
       </div>
-      {/* ------- */}
     </div>
   )
 }
